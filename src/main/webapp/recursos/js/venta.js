@@ -41,7 +41,7 @@ $("#registrar").click(function(){
 	if(idr==0){
 	var param = {"fecha":$("#fecha").val(), "tipodoc":$("#tipdoc").val(), "idsucursal":$("#sucur").val(), "idcliente":$("#clien").val(), "opc":2};	$.ajax({
 		beforeSend: function(){
-			alert("ENTRO");
+		
 		},
 		data: param,
 		url: 'vc',
@@ -60,7 +60,8 @@ $("#registrar").click(function(){
 		}		
 	});
 	}else{
-		$.post("vc",{"fecha":$("#fecha").val(), "tipodoc":$("#tipdoc").val(), "idsucursal":$("#sucur").val(), "idcliente":$("#clien").val(), "opc":4},function (data) {
+		alert("Listo");
+		$.post("vc",{"id":$("#id").val(),"fecha":$("#fecha").val(), "tipodoc":$("#tipdoc").val(), "idsucursal":$("#sucur").val(), "idcliente":$("#clien").val(), "opc":4},function (data) {
 		listar();
 		limpiar();
     });

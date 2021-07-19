@@ -53,7 +53,7 @@ public class VentaController extends HttpServlet {
 			v.setFecha(request.getParameter("fecha"));
 			v.setTipodoc(request.getParameter("tipodoc"));
 			v.setIdsucursal(Integer.parseInt(request.getParameter("idsucursal")));
-			v.setIdsucursal(Integer.parseInt(request.getParameter("idcliente")));
+			v.setIdcliente(Integer.parseInt(request.getParameter("idcliente")));
 			out.println(gson.toJson(vdao.update(v)));
 			break;
 		case 5://eliminar
