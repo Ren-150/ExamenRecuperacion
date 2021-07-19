@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caja{
+    width: 40%;
+    height: 60vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#titulo{
+    margin-bottom: 20px;
+}
